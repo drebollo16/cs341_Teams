@@ -36,7 +36,6 @@ const requestHandler = ((req, res) => {
             console.log(parsedBody.split('=')[1]);
             //send the usernames to li in /users
             fs.writeFile('user.txt', message, (err) => {
-
                 res.statusCode = 302;
                 res.setHeader('Location', '/');
                 return res.end();

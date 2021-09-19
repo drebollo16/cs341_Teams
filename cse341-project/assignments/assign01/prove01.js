@@ -2,9 +2,6 @@ const http = require('http');
 
 const routes = require('./prove01-routes.js');
 
-//const server = http.createServer(routes);
-
-console.log(routes.someText);
 const server = http.createServer(routes.handler);
 
 //thousand port are safe
